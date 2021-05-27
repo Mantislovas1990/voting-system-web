@@ -13,7 +13,7 @@ body{
 
 .navbar {
     margin: 0;
-    padding: 5px 70px;
+    padding: 5px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -21,16 +21,16 @@ body{
 
 .logo {
     /*background-color: #b8b5b5;*/
-    border: 5px solid #EFC588FF;
-    border-radius: 80%;
-    max-width: 15%;
+    /*border: 5px solid #EFC588FF;*/
+    /*border-radius: 80%;*/
+    max-width: 10%;
     cursor: pointer;
 }
 
 .navbar ul li {
     list-style: none;
     display: inline-block;
-    margin: 0 25px;
+    margin: 0 15px;
     position: relative;
 }
 
@@ -67,12 +67,14 @@ body{
 }
 .content h1 {
     font-size: 30px;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 .content h3 {
     margin: 20px auto;
     font-weight: 100;
     line-height: 25px;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 button{
