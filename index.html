@@ -3,21 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+          content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>E-Vote</title>
 </head>
 <body>
-<header>
+<header class="header">
     <nav class="navbar">
-        <img src="img/logo.png" class="logo" alt="logo.png">
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Candidates</a></li>
-            <li><a href="">Who is winning?</a></li>
-            <li><a href="loginform/index.html">Vote</a></li>
+        <img src="img/logo.png" class="nav-logo" alt="logo.png">
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Candidates</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Who is winning?</a></li>
+            <li class="nav-item"><a href="loginform/index.html" class="nav-link">Vote</a></li>
         </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </nav>
 </header>
 <main class="content">
@@ -34,5 +38,6 @@
 <footer>
     <p>ELECTION 2022</p>
 </footer>
+<script src="main.js"></script>
 </body>
 </html>

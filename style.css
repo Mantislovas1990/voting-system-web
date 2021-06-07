@@ -1,30 +1,35 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
-    padding: 0;
     font-family: sans-serif;
-    width: 100%;
+    /*width: 100%;*/
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("img/homepage.jpg");
     background-size: cover;
     background-position: center;
-    overflow: auto ;
+    overflow: auto;
 }
 
 .navbar {
-    margin: 0;
     padding: 5px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.logo {
-    max-width: 15%;
+.nav-logo {
+    width: 15%;
     cursor: pointer;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navbar ul li {
@@ -38,7 +43,21 @@ body {
     text-decoration: none;
     color: burlywood;
     text-transform: uppercase;
-    font-size: 15px;
+}
+
+.hamburger {
+    display: none;
+    background-color: transparent;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: burlywood;
 }
 
 .navbar ul li::after {
@@ -64,6 +83,11 @@ body {
     top: 50%;
     transform: translateY(-50%);
     color: burlywood;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 50%;
+    margin: 0 auto;
+    font-size: large;
 }
 
 .content h1 {
@@ -115,7 +139,7 @@ button:hover {
 
 body footer {
     text-align: center;
-    border:1px solid black;
+    border: 1px solid black;
     background-color: black;
     padding: 5px;
     position: fixed;
@@ -125,68 +149,38 @@ body footer {
 }
 
 body footer p {
-    color: #DEB887FF ;
+    color: #DEB887FF;
 }
 
-@media (max-width: 640px) {
+@media only screen and (max-width: 640px) {
 
     body {
-
         background: url(img/homepage.jpg) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-
-    }
-
-    .navbar {
-        display: inline;
-        padding: 0;
     }
 
     .logo {
-        max-width: 100%;
+        width: 100%;
     }
 
-    .navbar ul li {
-        display: block;
-        font-size: 10px;
-        margin-top: 10px;
+    .gradiant {
+        background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+        width: 100%;
+        height: 200px;
+        margin-top: 40px;
+        padding: 20px;
     }
 
     .navbar ul li a {
-        font-size: 15px;
-        margin: 10px;
-        color: black;
-        font-weight: bolder;
-        text-shadow: 1px 0 0 burlywood, 0 -1px 0 burlywood, 0 1px 0 burlywood, -1px 0 0 burlywood;
+        font-size: 2.5vw;
     }
 
-    .navbar ul li::after {
-        height: 4px;
-        bottom: -5px;
-
+    .navbar ul li {
+        margin-right: 5px;
     }
-
-    .navbar ul li:hover::after {
-        width: 100%;
-    }
-
-    .content {
-        text-align: center;
-        width: 100%;
-        position: absolute;
-        top: auto;
-        transform: none;
-        color: #070707;
-        font-weight: bolder;
-    }
-
-    .gradiant{
-        background:  linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)) ;
-    }
-
 
     .content h1 {
         color: burlywood;
@@ -196,13 +190,14 @@ body footer p {
         text-decoration: underline;
     }
 
-    .content h3{
+    .content h3 {
         color: burlywood;
         font-weight: bolder;
         margin: 10px auto;
         font-size: 14px;
         text-shadow: none;
     }
+
     button {
         font-size: 15px;
         width: 250px;
@@ -216,13 +211,13 @@ body footer p {
         overflow: hidden;
     }
 
-    .btn{
+    .btn {
         position: fixed;
-        bottom: 10%;
+        bottom: 0;
         width: 100%;
     }
 
-    body footer{
+    body footer {
         padding: 0;
     }
 
@@ -233,16 +228,98 @@ body footer p {
     button:hover {
         color: #DEB887FF;
     }
-
-    @media (max-width: 420px){
-
-        .content{
-            font-weight: normal;
-        }
+}
 
 
-        .navbar ul li a{
-            font-size: 15px;
-        }
+@media only screen and (max-width: 420px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 3rem;
+        flex-direction: column;
+        background-color: transparent;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        line-height: 2;
+    }
+
+    .navbar ul li a {
+        font-size: 5vw;
+    }
+
+    .navbar ul li::after{
+        height: 3px;
+        bottom: -3px;
+    }
+
+    .content {
+        top: 50%;
+    }
+
+    .content h1 {
+        color: burlywood;
+        margin-bottom: 10px;
+        font-size: 20px;
+        text-shadow: none;
+        text-decoration: underline;
+    }
+
+    .content h3 {
+        color: burlywood;
+        font-weight: bolder;
+        margin: 10px auto;
+        font-size: 14px;
+        text-shadow: none;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    span {
+        background: #EFC588FF;
+        height: 100%;
+        width: 0;
+        position: unset;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        transition: 0.5s;
     }
 }
+
+@media only screen and (max-width: 320px) {
+    .gradiant {
+        padding: 5px;
+        height: 160px;
+    }
+
+}
+
+
+
+
