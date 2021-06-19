@@ -16,32 +16,33 @@
 </header>
 
 <main>
-    <article >
+    <article>
         <div class="wrapper">
             <h1>Enter Information</h1>
-            <form class="login-form" action="./" method="POST">
+            <form name="form" class="login-form" action="" method="POST" onsubmit="return nameValidation()">
                 <label>
-                    <input required type="text" name="" placeholder="First Name">
+                    <input class="input-text" required type="text" name="name" placeholder="First Name">
                 </label>
 
                 <label>
-                    <input required type="text" name="" placeholder="Last Name">
+                    <input class="input-text" required type="text" name="lastname" placeholder="Last Name">
                 </label>
 
                 <label>
-                    <input required type="email" name="" placeholder="Email">
+                    <input class="input-text" required type="email" name="email" placeholder="Email">
                 </label>
 
                 <label>
-                    <input required type="tel" name="phone" placeholder=" Phone number: 123-456-7890">
+                    <input class="input-text" required type="tel" name="phone"
+                           placeholder=" Phone number: 123-456-7890">
                 </label>
 
                 <div class="radio-container">
-                    <label class="left-radio">
+                    <label>
                         Male
                         <input type="radio" name="gender" value="Male">
                     </label>
-                    <label class="right-radio">
+                    <label>
                         Female
                         <input type="radio" name="gender" value="Female">
                     </label>
@@ -56,5 +57,6 @@
 <footer>
     <p>ELECTION 2022</p>
 </footer>
+<script src="validation.js"> </script>
 </body>
 </html>

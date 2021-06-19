@@ -1,0 +1,40 @@
+* {
+    margin: 0 auto;
+}
+
+body {
+    background-image: linear-gradient(225deg, #953719, #470b4a);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.main {
+    align-content: space-evenly;
+    margin: 0 auto;
+}
+
+.vote-accepted {
+    width: 400px;
+    height: 200px;
+    border: 2px solid black;
+    text-align: center;
+    line-height: 60px;
+}
+
+p {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+h1{
+    color: white;
+    word-spacing: 10px;
+}
+
+button{
+    width: 30%;
+}
