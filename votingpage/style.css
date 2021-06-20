@@ -104,7 +104,6 @@ html, body {
 
 body footer {
     text-align: center;
-    border: 1px solid black;
     background-color: black;
     padding: 5px;
     position: fixed;
@@ -133,9 +132,9 @@ body footer p {
     }
 }
 
-@media screen and (max-width: 640px){
+@media screen and (max-width: 640px) {
 
-    h1{
+    h1 {
         font-size: 22px;
     }
 }

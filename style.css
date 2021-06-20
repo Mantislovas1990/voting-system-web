@@ -245,7 +245,7 @@ body footer p {
         font-size: 5vw;
     }
 
-    .navbar ul li::after{
+    .navbar ul li::after {
         height: 3px;
         bottom: -3px;
     }
