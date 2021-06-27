@@ -46,8 +46,8 @@ header {
 
 .table th {
     background-color: transparent;
-    color: #ffffff;
-    text-shadow: 2px 2px 3px black;
+    color: sandybrown;
+    text-shadow: 3px 3px 4px black;
 }
 
 .table tbody tr:nth-child(even) {
