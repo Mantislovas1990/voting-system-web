@@ -17,6 +17,16 @@ body {
     margin: 0 auto;
 }
 
+body footer {
+    text-align: center;
+    background-color: black;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+
 .vote-accepted {
     width: 400px;
     height: 200px;
