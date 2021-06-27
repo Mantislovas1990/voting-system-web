@@ -10,17 +10,19 @@
 </head>
 <body>
 <header>
-    <div class="wrapper">
+    <nav class="navbar">
         <img src="../img/logo.png" class="logo" alt="logo.png">
-    </div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="../index.html" class="nav-link">GO BACK</a></li>
+        </ul>
+    </nav>
 </header>
 
 <main>
     <article>
         <div class="wrapper">
             <h1>Enter Information</h1>
-            <form name="form" class="login-form" action="../votingpage/index.html" method="POST"
-                  onsubmit="return nameValidation()">
+            <form name="form" class="login-form" action="../votingpage/index.html" method="POST">
                 <label>
                     <input class="input-text" required type="text" name="name" placeholder="First Name">
                 </label>
@@ -38,7 +40,7 @@
                            placeholder=" Phone number: 123-456-7890">
                 </label>
 
-                <div class="radio-container">
+                <section class="radio-container">
                     <label>
                         Male
                         <input type="radio" name="gender" value="Male">
@@ -47,7 +49,7 @@
                         Female
                         <input type="radio" name="gender" value="Female">
                     </label>
-                </div>
+                </section>
                 <label class="submit">
                     <input type="submit" name="submit" value="Continue">
                 </label>

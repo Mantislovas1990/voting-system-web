@@ -7,6 +7,29 @@ html {
     height: 100vh;
 }
 
+header {
+    width: 100%;
+    padding: 30px 50px;
+    position: absolute;
+    text-align: right;
+    align-content: baseline;
+}
+
+.navbar ul {
+    list-style: none;
+
+}
+
+.navbar ul li a {
+    background-color: burlywood;
+    padding: 10px 30px;
+    border: 2px solid black;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -23,7 +46,8 @@ body {
 }
 
 .logo {
-    max-width: 15vh;
+    float: left;
+    max-width: 70px;
     cursor: pointer;
 }
 
@@ -119,8 +143,22 @@ input[type="gender"] {
         flex-wrap: nowrap;
     }
 
+    .navbar ul li a {
+        background-color: burlywood;
+        padding: 5px 10px;
+        border: 2px solid black;
+        text-decoration: none;
+        color: #000000;
+        font-weight: bolder;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+
     article {
+        width: 400px;
+        border: none;
         background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75))
+
     }
 
     .logo {
@@ -171,43 +209,19 @@ input[type="gender"] {
     }
 }
 
-@media (max-width: 640px) {
-
-    article {
-        margin-top: 20px;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75))
-    }
-
-    input[type="text"] {
-        width: 60%;
-        align-content: center;
-        display: flex;
-        justify-content: center;
-        margin: 10px auto;
-    }
-
-    input[type="tel"] {
-        width: 60%;
-        margin: 10px auto;
-        /*padding: 0;*/
-    }
-
-    input[type="email"] {
-        width: 60%;
-        margin: 10px auto;
-    }
-}
-
 @media (max-width: 420px) {
 
     article {
-        margin-top: 20px;
         padding: 0;
         width: 100%;
+        border: none;
         background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75))
+
     }
 
-
+    header{
+        padding: 10px;
+    }
     .login-form {
         width: 70vw;
     }
