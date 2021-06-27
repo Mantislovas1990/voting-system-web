@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    padding: 20px;
+    padding: 5px;
     font-family: sans-serif;
     background-image: url("../img/table.jpg");
     background-size: cover;
@@ -57,6 +57,19 @@ header {
 td{
     color: #ffffff;
     text-shadow: 2px 2px 3px black;
+}
+
+body footer {
+    text-align: center;
+    background-color: black;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+body footer p {
+    color: white;
 }
 
 @media (max-width: 760px) {
