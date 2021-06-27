@@ -39,9 +39,9 @@ header {
 
 .table td, .table th {
     padding: 12px 15px;
-    border: 2px solid #a8a8a8;
+    border: 1px solid #ffffff;
     text-align: center;
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .table th {
@@ -107,6 +107,7 @@ body footer p {
         text-align: right;
         padding-left: 50%;
         position: relative;
+        color: white;
     }
 
     .table td::before {
@@ -118,5 +119,6 @@ body footer p {
         font-size: 15px;
         font-weight: bold;
         text-align: left;
+        color: sandybrown;
     }
 }
